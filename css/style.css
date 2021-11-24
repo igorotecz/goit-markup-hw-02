@@ -1,0 +1,39 @@
+:root {
+}
+
+.body {
+  font-family: roboto;
+  color: #212121;
+  background-color: #ffffff;
+}
+/*текст цвет вторичного  #757575;*/
+/*текст цвет акцент  #2196F3;*/
+/*текст цвет белый #ffffff */
+
+/* фон header foter #2F303A;*/
+/* фон team  #F5F4FA;*/
+
+/*header*/
+.headrer {
+  background-color: #ffffff;
+}
+.name {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #212121;
+}
+.web {
+  color: #2196f3;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+/*======main-slogan-begin=====*/
+
+/*=====main-about-end=====*/
+
+/*  */
