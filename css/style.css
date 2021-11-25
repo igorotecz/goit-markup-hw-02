@@ -1,11 +1,21 @@
 :root {
+  --color: #212121;
+  --second-color: #2196f3;
+  --back-color: #ffffff;
+  --header-foter: #2f303a;
 }
 
 .body {
-  font-family: roboto;
-  color: #212121;
-  background-color: #ffffff;
+  --font-family: roboto;
+  --color: #212121;
+  --background-color: #ffffff;
+  --secondary-color: #2196f3;
 }
+ul {
+  list-style: none;
+  display: flex;
+}
+
 /*текст цвет вторичного  #757575;*/
 /*текст цвет акцент  #2196F3;*/
 /*текст цвет белый #ffffff */
@@ -13,11 +23,11 @@
 /* фон header foter #2F303A;*/
 /* фон team  #F5F4FA;*/
 
-/*header*/
+/*=====header begin=====*/
 .headrer {
   background-color: #ffffff;
 }
-.name {
+.logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -28,9 +38,24 @@
 .web {
   color: #2196f3;
 }
-ul {
-  list-style: none;
-  display: flex;
+
+.site-nav .link.current {
+  color: var(--second-color);
+}
+/*=====header end=====*/
+
+/*=====mail begin=====*/
+.slogan {
+  background-color: var(--header-foter);
+}
+.slogan-site {
+  color: var(--back-color);
+}
+.button {
+  color: var(--back-color);
+  background-color: var(--second-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /*======main-slogan-begin=====*/
 
