@@ -3,11 +3,13 @@
   --second-color: #2196f3;
   --back-color: #ffffff;
   --header-foter: #2f303a;
+  --color-text: #757575;
 }
 
 .body {
-  --font-family: roboto;
+  font-family: Roboto, sant-serif;
   --color: #212121;
+  --color-text: #757575;
   --background-color: #ffffff;
   --secondary-color: #2196f3;
 }
@@ -39,17 +41,35 @@ ul {
   color: #2196f3;
 }
 
-.site-nav .link.current {
+.site-nav .link.current:hover {
   color: var(--second-color);
 }
 /*=====header end=====*/
 
-/*=====mail begin=====*/
-.slogan {
+/*=====main begin=====*/
+
+/*====section-main-slogan-begin=====*/
+.slogan,
+.logo-footer {
   background-color: var(--header-foter);
+
+  /* position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px; */
 }
 .slogan-site {
   color: var(--back-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .button {
   color: var(--back-color);
@@ -57,8 +77,103 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-/*======main-slogan-begin=====*/
+/*====section-main-slogan-end=====*/
 
-/*=====main-about-end=====*/
+/*====section-main-about-begin=====*/
+h2 {
+  color: var(--color);
+  text-align: center;
 
-/*  */
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+big {
+}
+.advantage {
+  color: var(--color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage-text {
+  color: var(--color-text);
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+/*=====section-main-about-end=====*/
+
+/*=====section-imege-begin=====*/
+/*=====section-imege-end=====*/
+
+/*=====sectiom-team-begin=====*/
+.team {
+}
+.team-member {
+}
+.member-name {
+  color: var(--color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.member-position {
+  color: var(--color-text);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*=====sectiom-team-end=====*/
+
+/*=====main end=====*/
+
+/*=====footer-begin=====*/
+.logo-web {
+  color: var(--back-color);
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.web-footer {
+  color: var(--second-color);
+}
+.address {
+  color: var(--back-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.74;
+  letter-spacing: 0.03em;
+}
+.contact-section {
+  list-style: inline;
+  display: flex;
+}
+.contact-section-link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/*=====footer-end=====*/
+/**/
+/**/
