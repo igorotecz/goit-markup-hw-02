@@ -216,6 +216,11 @@ big {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.button,
+.button-primery,
+.button-secondary {
+  cursor: pointer;
+}
 h3 {
   color: var(--color);
 
