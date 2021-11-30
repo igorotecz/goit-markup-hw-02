@@ -218,13 +218,24 @@ big {
 }
 h3 {
   color: var(--color);
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
 }
 .sorting {
   color: var(--color-text);
-}
 
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
 .projects-icon {
   text-decoration: none;
+}
+.title {
 }
 /*=====PORTFOLIO END=====*/
 
