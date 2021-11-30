@@ -4,6 +4,7 @@
   --back-color: #ffffff;
   --header-foter: #2f303a;
   --color-text: #757575;
+  --button-secondary: #f5f4fa;
 }
 
 body {
@@ -51,26 +52,29 @@ ul {
   letter-spacing: 0.02em;
 }
 .link,
-.active {
+.accent {
   color: var(--color);
   text-decoration: none;
 }
-
-.active:hover,
-.active:active {
-  color: var(--secondary-color);
+.accent:visited,
+:hover {
+  color: var(--second-color);
 }
+
 .contact-header-mail,
 .contact-header-tel {
   text-decoration: none;
 }
 .contact-header-mail {
-  color: var(--second-color);
+  color: var(--color-text);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.contact-header-mail:hover {
+  color: var(--second-color);
 }
 
 .contact-header-tel {
@@ -180,11 +184,61 @@ big {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 /*=====sectiom-team-end=====*/
 
 /*=====main end=====*/
 
+/*=====PORTFOLIO BEGIN=====*/
+.button-primery {
+  color: var(--back-color);
+  background-color: var(--second-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.button-secondary {
+  color: var(--color);
+  background-color: var(--button-secondary);
+
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+h3 {
+  color: var(--color);
+}
+.sorting {
+  color: var(--color-text);
+}
+
+.projects-icon {
+  text-decoration: none;
+}
+/*=====PORTFOLIO END=====*/
+
 /*=====footer-begin=====*/
+.logo-footer {
+  background-color: var(--header-foter);
+
+  /* position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px; */
+}
+
 .logo-web {
   color: var(--back-color);
   text-decoration: none;
