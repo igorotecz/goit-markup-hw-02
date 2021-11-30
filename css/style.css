@@ -215,11 +215,13 @@ big {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
 .button,
 .button-primery,
 .button-secondary {
   cursor: pointer;
+  border-color: transparent;
 }
 h3 {
   color: var(--color);
