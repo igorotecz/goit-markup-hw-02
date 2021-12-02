@@ -19,31 +19,47 @@ ul {
   display: flex;
 }
 
-/*текст цвет вторичного  #757575;*/
-/*текст цвет акцент  #2196F3;*/
-/*текст цвет белый #ffffff */
-
-/* фон header foter #2F303A;*/
-/* фон team  #F5F4FA;*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 /*=====header begin=====*/
 .headrer {
   background-color: #ffffff;
+  display: flex;
+  width: 1600px;
+  height: 80px;
+}
+.nav-bar {
+  display: flex;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 .logo {
+  align-self: center;
   text-decoration: none;
+  margin-left: 215px;
 
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   color: #212121;
 }
 .web {
   color: #2196f3;
 }
 .navigation {
+  display: flex;
   color: var(--color);
 
   font-weight: 500;
@@ -53,8 +69,13 @@ ul {
 }
 .link,
 .accent {
+  justify-content: space-between 25px;
   color: var(--color);
   text-decoration: none;
+  padding: 0 25px;
+}
+.accent {
+  margin-left: 93px;
 }
 .accent:visited,
 :hover {
@@ -64,6 +85,7 @@ ul {
 .contact-header-mail,
 .contact-header-tel {
   text-decoration: none;
+  padding: 0 20px;
 }
 .contact-header-mail {
   color: var(--color-text);
@@ -90,6 +112,15 @@ ul {
 /*=====main begin=====*/
 
 /*====section-main-slogan-begin=====*/
+h1 {
+}
+.slogan {
+  display: inline-block;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+}
 .slogan,
 .logo-footer {
   background-color: var(--header-foter);
@@ -100,19 +131,33 @@ ul {
   left: 0px;
   top: 80px; */
 }
+.conteiner {
+  width: 670px;
+  height: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
 .slogan-site {
   color: var(--back-color);
+  display: inline-block;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.button {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
 button.button {
+  padding: 10px 32px;
   color: var(--back-color);
   background-color: var(--second-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -198,7 +243,7 @@ big {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -212,7 +257,7 @@ big {
 
   font-weight: 500px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
@@ -228,7 +273,7 @@ h3 {
 
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .sorting {
@@ -236,7 +281,7 @@ h3 {
 
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875x;
   letter-spacing: 0.03em;
 }
 .projects-icon {
@@ -291,7 +336,7 @@ h3 {
   text-decoration: none;
 
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
