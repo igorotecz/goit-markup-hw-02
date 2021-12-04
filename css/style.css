@@ -37,6 +37,10 @@ html {
 }
 .nav-bar {
   display: flex;
+  width: 1600px;
+  height: 80px;
+  outline: 2px solid tomato;
+  margin-top: 10px;
 }
 .contact {
   display: flex;
@@ -67,15 +71,24 @@ html {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.navigation-li {
+  height: 16px;
+  margin-right: 50px;
+  align-self: center;
+}
+.navigation-li:last-child {
+  margin-right: 0;
+}
 .link,
 .accent {
+  display: block;
   justify-content: space-between 25px;
   color: var(--color);
   text-decoration: none;
-  padding: 0 25px;
 }
 .accent {
-  margin-left: 93px;
+  margin-left: 0;
+  margin-top: 0;
 }
 .accent:visited,
 :hover {
