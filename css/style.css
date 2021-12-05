@@ -16,9 +16,18 @@ body {
 }
 ul {
   list-style: none;
-  display: flex;
+  margin: 0;
+  padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 html {
   box-sizing: border-box;
 }
@@ -27,30 +36,43 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
 /*=====header begin=====*/
-.headrer {
-  background-color: #ffffff;
+.headrer-conteiner {
   display: flex;
-  width: 1600px;
-  height: 80px;
+  align-items: center;
+}
+.page-header {
+  padding: 25px 0;
+  border-bottom: 1px solid green;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .nav-bar {
+  margin-right: auto;
   display: flex;
-  width: 1600px;
-  height: 80px;
-  outline: 2px solid tomato;
-  margin-top: 10px;
+  align-items: center;
 }
-.contact {
+.contact-list {
   display: flex;
-  justify-content: center;
-  align-self: center;
 }
 .logo {
+  margin-right: 93px;
   align-self: center;
   text-decoration: none;
-  margin-left: 215px;
 
   font-family: Raleway;
   font-style: normal;
@@ -71,18 +93,12 @@ html {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.navigation-li {
-  height: 16px;
+.navigation-li:not(:last-child) {
   margin-right: 50px;
-  align-self: center;
-}
-.navigation-li:last-child {
-  margin-right: 0;
 }
 .link,
 .accent {
   display: block;
-  justify-content: space-between 25px;
   color: var(--color);
   text-decoration: none;
 }
@@ -94,11 +110,12 @@ html {
 :hover {
   color: var(--second-color);
 }
-
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
 .contact-header-mail,
 .contact-header-tel {
   text-decoration: none;
-  padding: 0 20px;
 }
 .contact-header-mail {
   color: var(--color-text);
@@ -128,11 +145,7 @@ html {
 h1 {
 }
 .slogan {
-  display: inline-block;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
+  padding: 200px 0;
 }
 .slogan,
 .logo-footer {
@@ -144,16 +157,11 @@ h1 {
   left: 0px;
   top: 80px; */
 }
-.conteiner {
-  width: 670px;
-  height: 190px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
-}
 .slogan-site {
   color: var(--back-color);
-  display: inline-block;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 
   font-family: Roboto;
   font-style: normal;
@@ -189,7 +197,12 @@ button.button {
 /*====section-main-slogan-end=====*/
 
 /*====section-main-about-begin=====*/
-h2 {
+.services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-bottom: 50px;
   color: var(--color);
   text-align: center;
 
@@ -197,7 +210,23 @@ h2 {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-big {
+.benefits {
+  padding-top: 94px;
+}
+.benefits-list {
+  display: flex;
+}
+.services-list {
+  display: flex;
+}
+.services-item:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits-item {
+  width: 270px;
 }
 .advantage {
   color: var(--color);
@@ -221,10 +250,27 @@ big {
 
 /*=====sectiom-team-begin=====*/
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: aquamarine;
 }
 .team-member {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--back-color);
+}
+.team-member:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list {
+  display: flex;
+}
+.team-box {
+  padding: 30px 0;
 }
 .member-name {
+  margin-bottom: 10px;
   color: var(--color);
 
   font-weight: 500;
@@ -306,6 +352,8 @@ h3 {
 
 /*=====footer-begin=====*/
 .logo-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--header-foter);
 
   /* position: absolute;
@@ -316,6 +364,8 @@ h3 {
 }
 
 .logo-web {
+  display: block;
+  margin-bottom: 30px;
   color: var(--back-color);
   text-decoration: none;
 
@@ -342,7 +392,9 @@ h3 {
 }
 .contact-section {
   list-style: none;
-  display: flex;
+}
+.contact-footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .contact-section-link {
   color: rgba(255, 255, 255, 0.6);
