@@ -142,8 +142,7 @@ img {
 /*=====main begin=====*/
 
 /*====section-main-slogan-begin=====*/
-h1 {
-}
+
 .slogan {
   padding: 200px 0;
 }
@@ -252,7 +251,7 @@ button.button {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: aquamarine;
+  background-color: var(--button-secondary);
 }
 .team-member {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -294,6 +293,18 @@ button.button {
 /*=====main end=====*/
 
 /*=====PORTFOLIO BEGIN=====*/
+.btn-portfolio {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.buttons:not(:last-child) {
+  margin-right: 8px;
+}
+.buttons {
+  height: 38px;
+}
 .button-primery {
   color: var(--back-color);
   background-color: var(--second-color);
@@ -314,18 +325,46 @@ button.button {
   color: var(--color);
   background-color: var(--button-secondary);
 
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
 }
+.button-primery,
+.button-secondary {
+  padding-left: 22px;
+  padding-right: 22px;
+}
 .button,
 .button-primery,
 .button-secondary {
   cursor: pointer;
   border-color: transparent;
+}
+.projects {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+.visualization {
+  margin-top: 30px;
+  display: inline;
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+
+  background: var(--back-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.visualization:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.team-box {
+  padding: 0;
 }
 h3 {
   color: var(--color);
@@ -336,17 +375,23 @@ h3 {
   letter-spacing: 0.06em;
 }
 .sorting {
+  margin: 4px 24px 0 24px;
   color: var(--color-text);
 
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.875x;
+  line-height: 1.875;
   letter-spacing: 0.03em;
 }
 .projects-icon {
   text-decoration: none;
 }
 .title {
+  margin: 20px 24px 0 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--color);
 }
 /*=====PORTFOLIO END=====*/
 
