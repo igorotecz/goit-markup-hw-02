@@ -296,11 +296,11 @@ button.button {
 /*=====PORTFOLIO BEGIN=====*/
 .all-btn {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .btn-portfolio {
   display: flex;
-
-  /*margin-bottom: 50px;*/
+  margin-bottom: 50px;
   justify-content: center;
 }
 .buttons:not(:last-child) {
@@ -347,24 +347,10 @@ button.button {
   cursor: pointer;
   border-color: transparent;
 }
-/*===========container-portfolio============*/
-.container-portfolio {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-.all-projects {
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
-
 .projects {
   padding: 0;
   margin: 0;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
 
   margin-left: calc(-1 * var(--card-set-gup));
@@ -404,58 +390,7 @@ button.button {
 .projects-icon {
   text-decoration: none;
 }
-/*
-v-1
-.projects {
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin-bottom: 94px;
-}
-.visualization {
-  margin-top: 30px;
-  display: inline;
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 262px;
 
-  background: var(--back-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
-.visualization:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.team-box {
-  padding: 0;
-}
-h3 {
-  color: var(--color);
-
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.sorting {
-  margin: 4px 24px 0 24px;
-  color: var(--color-text);
-
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-}
-.projects-icon {
-  text-decoration: none;
-}
-.title {
-  margin: 20px 24px 0 24px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  color: var(--color);
-}*/
 /*=====PORTFOLIO END=====*/
 
 /*=====footer-begin=====*/
