@@ -126,10 +126,26 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contact-header-mail::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../imagescvg/envelope_hover.svg);
+}
+
 .contact-header-mail:hover {
   color: var(--second-color);
 }
-
+.contact-header-tel::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../imagescvg/);
+}
 .contact-header-tel {
   color: var(--color-text);
 
